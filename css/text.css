@@ -1,0 +1,54 @@
+.title {
+  color: var(--white);
+  line-height: 1;
+  font-size: 3rem;
+}
+
+.t-main {
+  font-size: 5rem;
+}
+
+.subtitle {
+  color: var(--blue-2);
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: var(--white);
+  font-size: 0.975rem;
+}
+
+.emphasis {
+  color: var(--blue-2);
+}
+
+.t-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .t-main {
+    font-size: 4rem !important;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle  {
+    font-size: 1rem;
+  }
+  
+  .paragraph {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .t-main {
+    font-size: 2.5rem !important;
+  }
+}

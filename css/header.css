@@ -1,0 +1,54 @@
+.header {
+  background-color: var(--gray-2);
+  padding: 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu ul li a {
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: var(--white);
+  transition: all .2s;
+}
+
+.menu ul li a:hover {
+  background: var(--gray-3);
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header-container {
+    gap: 15px;
+  }
+  
+  .menu ul li a {
+    font-size: 0.875rem;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+  }
+}

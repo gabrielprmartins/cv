@@ -1,0 +1,9 @@
+.footer {
+  background: var(--gray-1);
+  padding: 25px;
+}
+
+.copy {
+  color: var(--white);
+  text-align: center;
+}

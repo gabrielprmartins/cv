@@ -1,0 +1,118 @@
+.project {
+  margin-top: 30px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px 30px;
+}
+
+.project-langs {
+  grid-column: 1;
+}
+
+.project-about {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.project-img img {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.project-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-about-description h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.project-about-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btn-github {
+  color: var(--white);
+  text-decoration: underline;
+  padding: 10px;
+  transition: all .3s;
+}
+
+.btn-github:hover {
+  padding-left: 20px;
+}
+
+.btn-site-link {
+  display: flex;
+  align-items: center;
+}
+
+.btn-site-link::after {
+  content: '';
+  background: url('../../assets/arrow.svg');
+  width: 15px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 12px;
+  transition: all .3s;
+}
+
+.btn-site-link:hover::after {
+  transform: translate3d(5px, 0, 0);
+}
+
+.project-langs {
+  display: flex;
+  gap: 16px;
+}
+
+.lang {
+  padding: 5px 10px;
+  font-size: 0.975rem;
+  background: var(--gray-3);
+  border-radius: 4px;
+}
+
+.lang.html {
+  background: linear-gradient(180deg, var(--orange-1) 0%, var(--orange-2) 100%);
+  color: var(--font-html);
+}
+
+.lang.css {
+  background: linear-gradient(180deg, var(--purple-1) 0%, var(--purple-2) 100%);
+  color: var(--font-css);
+}
+
+.lang.js {
+  background: linear-gradient(180deg, var(--yellow-1) 0%, var(--yellow-2) 100%);
+  color: var(--font-js);
+}
+
+@media screen and (max-width: 1000px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-about {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .project-about-links {
+    gap: 20px;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+}
