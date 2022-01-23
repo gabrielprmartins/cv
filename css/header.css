@@ -25,11 +25,22 @@
   padding: 10px 15px;
   border-radius: 4px;
   color: var(--white);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .menu ul li a:hover {
   background: var(--gray-3);
+}
+
+.btn-menu::after {
+  content: '';
+  transform: rotate(90deg);
+  background: url('../../assets/arrow.svg');
+  width: 15px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 12px;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -40,7 +51,7 @@
   .header-container {
     gap: 15px;
   }
-  
+
   .menu ul li a {
     font-size: 0.875rem;
   }
@@ -49,6 +60,5 @@
     margin-top: 10px;
     flex-wrap: wrap;
     gap: 15px;
-
   }
 }
