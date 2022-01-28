@@ -5,7 +5,7 @@
 .project-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 20px 30px;
+  gap: 14px 30px;
 }
 
 .project-langs {
@@ -46,7 +46,7 @@
   color: var(--white);
   text-decoration: underline;
   padding: 10px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .btn-github:hover {
@@ -65,7 +65,7 @@
   height: 12px;
   display: inline-block;
   margin-left: 12px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .btn-site-link:hover::after {
