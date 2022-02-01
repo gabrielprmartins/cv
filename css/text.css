@@ -5,7 +5,7 @@
 }
 
 .t-main {
-  font-size: 5rem;
+  font-size: 4.8rem;
 }
 
 .subtitle {
@@ -38,10 +38,10 @@
     font-size: 2rem;
   }
 
-  .subtitle  {
+  .subtitle {
     font-size: 1rem;
   }
-  
+
   .paragraph {
     font-size: 0.875rem;
   }
