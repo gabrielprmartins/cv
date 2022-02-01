@@ -22,12 +22,19 @@
   grid-row: 1;
   border-radius: 4px;
   box-shadow: var(--shadow);
+  width: 100%;
+  object-fit: cover;
+  max-height: 360px;
 }
 
 .project-about {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.project-about-description {
+  margin-bottom: 30px;
 }
 
 .project-about-description h2 {
@@ -74,11 +81,13 @@
 
 .project-langs {
   display: flex;
+  align-items: center;
   gap: 16px;
+  margin-bottom: 30px;
 }
 
 .lang {
-  padding: 5px 10px;
+  padding: 4px 10px;
   font-size: 0.975rem;
   background: var(--gray-3);
   border-radius: 4px;
@@ -104,15 +113,28 @@
     grid-template-columns: 1fr;
   }
 
+  .project-img img {
+    max-height: auto;
+  }
+
+  .project-langs {
+    display: none;
+  }
+
   .project-about {
     grid-row: 3;
     grid-column: 1;
+  }
+
+  .project-about-description {
+    margin-bottom: 0px;
   }
 
   .project-about-links {
     gap: 20px;
     flex-direction: row-reverse;
     align-self: flex-start;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
   }
 }
