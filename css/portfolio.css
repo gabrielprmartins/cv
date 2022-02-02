@@ -108,6 +108,11 @@
   color: var(--font-js);
 }
 
+.lang.vue {
+  background: linear-gradient(180deg, var(--blue-1) 0%, var(--blue-2) 100%);
+  color: var(--font-vue);
+}
+
 @media screen and (max-width: 1000px) {
   .project-container {
     grid-template-columns: 1fr;

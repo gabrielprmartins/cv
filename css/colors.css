@@ -3,20 +3,25 @@
   --gray-2: #151515;
   --gray-3: #232323;
   --gray-4: #303030;
-  --white: #F8F8F8;
-  --blue-1: #1EAE98;
-  --blue-2: #1194A6;
-  --orange-1: #FC8621; 
-  --orange-2: #CC640A;
-  --font-html: #682C0E;
-  --purple-1: #6047A6;
-  --purple-2: #3D2C8D;
-  --font-css: #1C0C5B;
-  --yellow-1: #FFE300;
-  --yellow-2: #CC8700;
-  --font-js: #4D3508;
-  --pink-1: #E5456B;
-  --pink-2: #9E1BCC;
+  --white: #f8f8f8;
+  --blue-1: #1eae98;
+  --blue-2: #1194a6;
+  --font-vue: #033b42;
+  --orange-1: #fc8621;
+  --orange-2: #cc640a;
+  --font-html: #682c0e;
+  --purple-1: #6047a6;
+  --purple-2: #3d2c8d;
+  --font-css: #1c0c5b;
+  --yellow-1: #ffe300;
+  --yellow-2: #cc8700;
+  --font-js: #4d3508;
+  --pink-1: #e5456b;
+  --pink-2: #9e1bcc;
   --shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  --separator: radial-gradient(50% 50% at 50% 50%, #1194A6 0%, rgba(196, 196, 196, 0) 100%);
+  --separator: radial-gradient(
+    50% 50% at 50% 50%,
+    #1194a6 0%,
+    rgba(196, 196, 196, 0) 100%
+  );
 }
