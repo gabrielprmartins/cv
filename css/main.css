@@ -1,5 +1,6 @@
 .main {
   margin: 80px auto;
+  margin-top: 200px;
 }
 
 .main-container {
@@ -37,5 +38,12 @@
 
   .main {
     margin: 30px auto;
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin-top: 120px;
   }
 }
