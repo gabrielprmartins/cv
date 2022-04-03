@@ -57,6 +57,15 @@
   transition: all 0.3s;
 }
 
+.title-menu {
+  color: var(--blue-1);
+  border-bottom: 2px solid var(--blue-1);
+  margin: 20px;
+  text-align: left;
+  font-size: 0.675rem;
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .header {
     padding: 20px 0;
@@ -69,15 +78,18 @@
 
 /* Menu Responsive */
 @media screen and (max-width: 800px) {
+  .title-menu {
+    display: flex;
+  }
   .logo {
     max-width: 180px;
   }
   .menu {
     top: 0;
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    background: var(--gray-5);
-    display: flex;
+    background: var(--gray-3);
+    display: block;
     align-items: center;
     justify-content: center;
     z-index: 2;
@@ -87,22 +99,81 @@
   }
   .open-menu {
     display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: -100000px;
+    cursor: pointer;
+    background: linear-gradient(180deg, var(--blue-1) 0%, var(--blue-2) 100%);
     z-index: 3;
+    border-radius: 5px;
+  }
+  .open-menu:hover {
+    background:  linear-gradient(180deg, var(--blue-2) 0%, var(--blue-1) 100%) !important;
+  }
+  .open-menu span {
+    background-color: var(--white);
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    border-radius: 50px;
+    transition: all 0.2s;
+  }
+  .open-menu span:nth-child(1) {
+    top: 14px;
+    left: 8px;
+  }
+  .open-menu span:nth-child(2) {
+    top: 20px;
+    left: 8px;
+  }
+  .open-menu span:nth-child(3) {
+    top: 26px;
+    left: 8px;
   }
   .menu.active {
     position: fixed;
     left: 0;
   }
+  .open-menu.active span:nth-child(1) {
+    transform: rotate(40deg);
+    top: 20px;
+  }
+  .open-menu.active span:nth-child(3) {
+    transform: rotate(-40deg);
+    top: 20px;
+  }
+  .open-menu.active span:nth-child(2) {
+    display: none;
+  }
   .menu ul {
     display: block;
+    margin-top: 50%;
   }
-  .menu ul a {
-    margin: 30px;
+  .menu ul li a {
+    margin: 10px;
     display: block;
     font-size: 1.5rem;
   }
+  .menu ul li a:hover {
+    background-color: var(--gray-1);
+  }
   .btn-menu {
-    background: none;
-    box-shadow: none;
+    position: relative;
+  }
+  .btn-menu::after {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 80%;
+  }
+  .menu ul li a {
+    font-size: 1.1rem;
   }
 }

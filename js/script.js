@@ -20,6 +20,7 @@ const menuButton = document.querySelector('.open-menu');
 
 const toggleMenu = () => {
   menu.classList.toggle(activeClass);
+  menuButton.classList.toggle(activeClass);
 };
 
 const addMenuEvents = () => {
