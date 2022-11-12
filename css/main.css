@@ -1,6 +1,6 @@
 .main {
   margin: 80px auto;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .main-container {
@@ -17,7 +17,7 @@
 }
 
 .main-container::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -38,12 +38,33 @@
 
   .main {
     margin: 30px auto;
-    margin-top: 180px;
+    margin-top: 130px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .main {
-    margin-top: 120px;
+    margin-top: 100px;
   }
+}
+
+.langs-container {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.langs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.langs li {
+  width: 40px;
 }
